@@ -18,11 +18,12 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >=3.6
   run:
-    - python
+    - python >=3.6
     - requests >=2.22.0
     - websocket-client >=0.54.0
+    - msgpack-python >=1.0.0
 
 test:
   imports:
@@ -40,7 +41,6 @@ about:
   summary: A Python SignalR Core client, with invocation auth and two way streaming. Compatible with azure / serverless functions. Also with automatic reconnect and manually reconnect.
   license: MIT
   license_family: MIT
-  # License file manually packaged. See: https://github.com/mandrewcito/signalrcore/pull/33
   license_file: LICENSE
 
 extra:
