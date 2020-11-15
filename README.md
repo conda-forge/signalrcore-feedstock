@@ -5,11 +5,9 @@ Home: https://github.com/mandrewcito/signalrcore
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/signalrcore-feedstock/blob/master/LICENSE.txt)
 
 Summary: A Python SignalR Core client, with invocation auth and two way streaming. Compatible with azure / serverless functions. Also with automatic reconnect and manually reconnect.
-
-
 
 Current build status
 ====================
