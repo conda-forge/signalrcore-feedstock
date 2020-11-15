@@ -1,5 +1,5 @@
 {% set name = "signalrcore" %}
-{% set version = "0.8.7" %}
+{% set version = "0.8.8" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/signalrcore-{{ version }}.tar.gz
-  sha256: d95df4109e26e1a0c8e75da1037cb985cdb1812e7cf18af075cd72fe3581f85b
+  sha256: 20f19f2cc606aa09e3c6429cf0f3b474789835ddd1d062c218ae0c13aa0db673
 
 build:
   number: 0
