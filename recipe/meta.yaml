@@ -22,8 +22,8 @@ requirements:
   run:
     - python >=3.6
     - requests >=2.22.0
-    - websocket-client >=0.54.0
-    - msgpack-python >=1.0.0
+    - websocket-client ==0.54.0
+    - msgpack-python ==1.0.2
 
 test:
   imports:
