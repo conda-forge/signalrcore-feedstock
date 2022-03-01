@@ -1,5 +1,5 @@
 {% set name = "signalrcore" %}
-{% set version = "0.9.2" %}
+{% set version = "0.9.3" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/signalrcore-{{ version }}.tar.gz
-  sha256: c3f75bddf7b5549d92ba9fce3f54d1e60b5dc952cf8db61900430cd925e1ac13
+  sha256: e15bd1ffac7cc7a485a1ffd97832ffbf791d050bbef19539fb73263f18f949a4
 
 build:
   number: 0
@@ -22,7 +22,7 @@ requirements:
   run:
     - python >=3.6
     - requests >=2.22.0
-    - websocket-client ==0.54.0
+    - websocket-client ==1.0.0
     - msgpack-python ==1.0.2
 
 test:
