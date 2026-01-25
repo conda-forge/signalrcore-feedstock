@@ -1,0 +1,47 @@
+schema_version: 1
+
+context:
+  name: signalrcore
+  version: 0.9.71
+
+package:
+  name: ${{ name|lower }}
+  version: ${{ version }}
+
+source:
+  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/signalrcore-${{ version }}.tar.gz
+  sha256: 5ade7606c4d34eba3a9963d9149ba8677fcc913976ebedf65a98863a33d27455
+
+build:
+  number: 0
+  noarch: python
+  script: ${{ PYTHON }} -m pip install . -vv --no-build-isolation --no-deps
+
+requirements:
+  host:
+    - pip
+    - python ${{ python_min }}.*
+    - setuptools
+  run:
+    - python >=${{ python_min }}
+    - msgpack-python ==1.0.2
+
+tests:
+  - python:
+      imports:
+        - signalrcore
+        - signalrcore.hub
+        - signalrcore.messages
+        - signalrcore.protocol
+      pip_check: true
+      python_version: ${{ python_min }}.*
+
+about:
+  summary: A Python SignalR Core client, with invocation auth and two way streaming. Compatible with azure / serverless functions. Also with automatic reconnect and manually reconnect.
+  license: MIT
+  license_file: LICENSE
+  homepage: https://github.com/mandrewcito/signalrcore
+
+extra:
+  recipe-maintainers:
+    - synapticarbors
