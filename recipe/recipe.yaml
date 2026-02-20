@@ -24,7 +24,7 @@ requirements:
     - setuptools
   run:
     - python >=${{ python_min }}
-    - msgpack-python ==1.0.2
+    - msgpack-python ==1.1.2
 
 tests:
   - python:
