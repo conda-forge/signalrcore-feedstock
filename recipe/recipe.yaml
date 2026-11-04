@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: signalrcore
-  version: "1.0.2"
+  version: "1.0.4"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/signalrcore-${{ version }}.tar.gz
-  sha256: 8d3bdcb6c66de58894d0dce43f16d2cd95188cd426342b82d5d52c72b8856927
+  sha256: 51a0951e5103cb9c1c3262be9eac2bb9b79e12bb08b2b012fedd0d3f65b49592
 
 build:
   number: 0
