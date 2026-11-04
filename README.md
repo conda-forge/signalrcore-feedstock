@@ -9,6 +9,8 @@ Package license: MIT
 
 Summary: A Python SignalR Core client, with invocation auth and two way streaming. Compatible with azure / serverless functions. Also with automatic reconnect and manually reconnect.
 
+Development: https://github.com/mandrewcito/signalrcore
+
 Current build status
 ====================
 
