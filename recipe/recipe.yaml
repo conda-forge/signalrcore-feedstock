@@ -8,7 +8,7 @@ package:
   version: ${{ version }}
 
 source:
-  url: https://pypi.org/packages/source/s/signalrcore-/signalrcore-${{ version }}.tar.gz
+  url: https://pypi.org/packages/source/s/signalrcore/signalrcore-${{ version }}.tar.gz
   sha256: 51a0951e5103cb9c1c3262be9eac2bb9b79e12bb08b2b012fedd0d3f65b49592
 
 build:
